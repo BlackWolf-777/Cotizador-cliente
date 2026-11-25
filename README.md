@@ -6,6 +6,8 @@ De un proceso manual en hojas de cálculo a un sistema web en el que se pega un 
 > Proyecto real, publicado con **datos ficticios**: empresas, RUC, contenedores, BL, facturas y tarifas fueron reemplazados.
 > Las datas de ejemplo conservan la forma y el volumen de una operación real, pero ninguna cifra corresponde a una empresa existente.
 
+**🔗 Demo en línea (sin clave): https://cotizador-deposito-demo.vercel.app**
+
 ![Cotizar](docs/img/02_cotizar.png)
 
 ---
@@ -87,7 +89,7 @@ flowchart LR
 
 ## Demo en línea
 
-La demo pública usa una base propia con los mismos datos ficticios. Se reinicia todos los días (cron de Vercel → `/api/demo/reiniciar`), así que se puede probar libremente: cotizar, emitir, facturar o registrar salidas.
+La demo pública (https://cotizador-deposito-demo.vercel.app) usa una base propia con los mismos datos ficticios. Se reinicia todos los días (cron de Vercel → `/api/demo/reiniciar`), así que se puede probar libremente: cotizar, emitir, facturar o registrar salidas.
 
 ## Ejecutar en local
 
