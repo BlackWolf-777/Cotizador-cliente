@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
         <div className="shell">
           <aside className="side">
             <div className="logo"><span>Cotizador</span> DT<small>Depósito temporal · demo</small></div>
-            <div className="demo">Datos ficticios para demostración</div>
+            <div className="demo">Datos ficticios para demostración. La demo se reinicia cada día.</div>
             <Nav />
           </aside>
           <main className="main">{children}</main>

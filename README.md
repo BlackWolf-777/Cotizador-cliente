@@ -85,6 +85,10 @@ flowchart LR
 - **"No hay información" es un resultado válido.** Si la data del DT está incompleta, el sistema lo dice y no adivina.
 - **Validación contra la historia.** La liquidación mensual de carga suelta se recalculó sobre 10 meses de liquidaciones manuales: coincidió al centavo y además reveló días no cobrados en meses de 31 días.
 
+## Demo en línea
+
+La demo pública usa una base propia con los mismos datos ficticios. Se reinicia todos los días (cron de Vercel → `/api/demo/reiniciar`), así que se puede probar libremente: cotizar, emitir, facturar o registrar salidas.
+
 ## Ejecutar en local
 
 Requisitos: Node.js 20+ y PostgreSQL 15+.
