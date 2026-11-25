@@ -12,6 +12,15 @@ De un proceso manual en hojas de cálculo a un sistema web en el que se pega un 
 
 ---
 
+## Estado del proyecto
+
+| Fase | Alcance | Responsable | Estado |
+|---|---|---|---|
+| **1. Diseño y piloto funcional** | Levantamiento del proceso, reglas de cobro como datos, motor de cotización, carga de las 3 datas, liquidaciones versionadas con JSON para facturación, carga suelta, acuerdos con cliente y con agencia. Piloto en paralelo a la operación con datos reales. | Hernán Reyes (dueño del proceso y del producto) | ✅ Completada |
+| **2. Adaptación e integración corporativa** | Migración a la infraestructura de la empresa, conexión directa a los sistemas de origen (data del depósito, movilizaciones y facturación del puerto), inicio de sesión corporativo con roles e integración con el sistema de facturación. | Área de TI de la empresa | 🔄 Transferida a TI |
+
+Este repositorio corresponde a la **Fase 1**. La lógica de negocio, el modelo de datos y las pruebas de validación del piloto fueron la base que se entregó a TI para la Fase 2.
+
 ## El problema
 
 En un depósito temporal del Callao, cada contenedor que se retira genera una liquidación que combina **cuatro fuentes**:
@@ -124,4 +133,4 @@ scripts/        plantillas de Excel y utilidades de carga
 ## Autor
 
 **Hernán Reyes** · Ejecutivo de Servicios Logísticos Integrales.
-Definí el proceso, las reglas de negocio y los criterios de validación, y lideré el piloto. El desarrollo se hizo con asistencia de IA (Claude).
+Definí el proceso, las reglas de negocio y los criterios de validación, lideré el piloto (Fase 1) y lo transferí a TI para su adaptación e integración (Fase 2). El desarrollo se hizo con asistencia de IA (Claude).
