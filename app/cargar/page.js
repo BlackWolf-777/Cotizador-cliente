@@ -11,7 +11,10 @@ export default async function Cargar() {
     <>
       <h1>Cargar datos</h1>
       <p className="sub">Sube el Excel (.xlsx) o CSV tal como lo descargas. Cada carga reemplaza a la anterior de esa fuente y queda registrada.</p>
-      <Cargador />
+      {process.env.DEMO_MODE === '1'
+        ? <div className="alert medio">En la demo pública la carga de archivos está desactivada para proteger los datos de ejemplo.
+            Los archivos con el formato esperado están en la carpeta <code>datos_demo/</code> del repositorio; puedes probar la carga ejecutando el proyecto en local.</div>
+        : <Cargador />}
       <div className="card tw">
         <h2>Cargas anteriores</h2>
         <table><thead><tr><th>#</th><th>Fuente</th><th>Archivo</th><th className="n">Filas</th><th className="n">Válidas</th><th className="n">Rechazadas</th><th>Fecha</th></tr></thead>
